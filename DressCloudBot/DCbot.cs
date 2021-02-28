@@ -13,11 +13,14 @@ namespace DressCloudBot
     {
         public IWebDriver Driver;
         string basePage = "https://dresscloud.pl/";
+
+        //required for proper operation
         readonly string login;
         readonly string password;
 
         int numberStartPage;
         int numberStopPage;
+
         public object SeleniumExtras { get; private set; }
 
         [SetUp]
